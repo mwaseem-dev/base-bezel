@@ -1,4 +1,4 @@
-# 🕒 Base & Bezel – Watch & Jewelry Management System
+# 🕒 Base & Bezel – Fashion Accessories Management System
 
 🚀 A full-stack Laravel-based web application for managing watches and rings with authentication, category-based product management, and admin control system.
 
