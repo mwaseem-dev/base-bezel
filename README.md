@@ -1,97 +1,72 @@
 # 🕒 Base & Bezel – Fashion Accessories Management System
 
-🚀 A full-stack Laravel-based web application for managing watches and rings with authentication, category-based product management, and admin control system.
+A modern full-stack **Laravel** web application for managing fashion accessories (watches and rings) with complete Admin Panel, Guest Checkout, and Inventory Management.
 
----
+![Project Banner](screenshots/banner.png) <!-- Add a good main screenshot here later -->
 
 ## 📌 Overview
+**Base & Bezel** is a real-world inspired e-commerce management system built with Laravel. It allows customers to browse products and place orders as guests, while admins have full control over products, categories, and inventory.
 
-**Base & Bezel** is a real-world inspired e-commerce style system designed to simulate a product and inventory management platform.
-
-It allows authenticated users to manage products like watches and rings, organize them into categories, and perform full CRUD operations securely.
-
-This project demonstrates how backend systems in real applications handle authentication, authorization, and inventory workflows.
-
----
+This project demonstrates clean code structure, proper MVC architecture, and real e-commerce features commonly used in professional web applications.
 
 ## 🎯 Key Features
-
-- 🛍️ Product Management (Watches & Rings)
-- 📂 Category-based product organization
-- ➕ Add / Edit / Delete products (CRUD operations)
-- 🔍 Product listing and detail view
-- 🧑‍💼 Admin-side management system
-- 📱 Responsive UI design
-- 🛒 Guest Order System (No login required to place orders)
-- 🚪 Optional Admin Authentication for management access
-
-## 🛒 Order System
-
-- Users can place orders without logging in (Guest Checkout)
-- No authentication required for customers
-- Simplified ordering flow for better user experience
-- Admin manages products and order-related operations
-
----
+- ✅ Full **CRUD** Operations (Create, Read, Update, Delete) for Products
+- 📂 Category-wise Product Organization
+- 👤 User Authentication & Authorization
+- 🛒 **Guest Checkout System** (Order placement without login)
+- 🧑‍💼 Dedicated Admin Dashboard
+- 🔍 Product Listing with Detail View
+- 📱 Fully Responsive & Mobile-Friendly Design
+- 🛍️ Clean and Modern User Interface
+- 🔐 Secure Authentication System
 
 ## 🛠️ Tech Stack
+- **Backend**: Laravel (PHP Framework)
+- **Architecture**: MVC Pattern
+- **Frontend**: Blade Templates, Bootstrap 5
+- **Database**: MySQL
+- **Tools**: Git, GitHub, VS Code, Postman
 
-**Backend:**
-- Laravel (PHP Framework)
-- MVC Architecture
-- Laravel Authentication System
+## 📸 Screenshots
 
-**Frontend:**
-- Blade Templates
-- Bootstrap
+*(Add 4-6 screenshots here)*
 
-**Database:**
-- MySQL
+![Product Listing](screenshots/product-listing.png)  
+![Product Detail](screenshots/product-detail.png)  
+![Admin Dashboard](screenshots/admin-dashboard.png)  
+![Guest Checkout](screenshots/guest-checkout.png)
 
-**Tools:**
-- Git & GitHub
-- VS Code
-- Postman (for testing APIs if used)
+## What I Learned
+- Implementing real-world **Guest Checkout** functionality
+- Managing Authentication and Authorization
+- Building scalable CRUD operations
+- Creating responsive designs with Bootstrap
 
----
-
-## 🏗️ System Architecture
-
-This project follows the **MVC (Model-View-Controller)** architecture:
-
-- **Models** → Handle database logic and relationships  
-- **Controllers** → Manage application business logic  
-- **Views** → Handle UI rendering using Blade templates  
-- **Guest Flow** → Users can browse and place orders without authentication  
-- **Admin Panel** → Restricted access for product management
-
----
-What I Learned
-- Implementing guest checkout (real-world e-commerce flow)
-
-
----
 ## ⚙️ Installation & Setup
+
+```bash
 # Clone the repository
 git clone https://github.com/mwaseem-dev/base-bezel.git
 
-# Move into project directory
+# Go into the project directory
 cd base-bezel
 
-# Install dependencies
+# Install PHP dependencies
 composer install
-npm install
 
-# Copy environment file
+# Install frontend dependencies
+npm install && npm run dev
+
+# Copy environment configuration
 cp .env.example .env
 
-# Generate app key
+# Generate application key
 php artisan key:generate
 
-# Configure database in .env
+# Configure your database in .env file
 
-# Run migrations
+# Run database migrations
 php artisan migrate
 
-# Start server
+# Start development server
 php artisan serve
